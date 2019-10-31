@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>berberBRAND</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" alt="logo" style="border:2px solid #fff ;left:0px" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <!-- 漢堡ICON -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">產品</a></li>
+                        <li><a href="#creative" class="nav-link">食材</a></li>
+                        <li><a href="#activity" class="nav-link">套餐</a></li>
+                        <li><a href="#standard" class="nav-link">規格</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/ji.jpg" alt="">
+                    <div class="carousel-caption pw">
+                        <h1>健康美味</h1>
+                        <p>新鮮食材 滿滿飽足</p>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="img/j2.jpg" alt="">
+                    <div class="carousel-caption pw">
+                        <h1>堪稱經典</h1>
+                        <p>用最頂級的食材做漢堡 享受奢華</p>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="img/j4.jpg" alt="">
+                    <div class="carousel-caption pw">
+                        <h1>標準配料</h1>
+                        <p>不多不少 完美配置</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+    <!-- 影片
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/mNBxwGghQAY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section> -->
+
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                饗食材
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="img/Cheese.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">嚴選起司</span>
+                                <span class="card-text">好吃</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>歐洲進口起司 香濃香</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="img/lettuce.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">新鮮萵苣</span>
+                                <span class="card-text">好鮮</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>天然無農藥 清脆甘甜</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="img/Beef.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">現切牛肉</span>
+                                <span class="card-text">好肉</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>很有嚼勁 肉美多汁</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text pwd">
+                    <h3>日常的小確幸</h3>
+                    <p> 下班回家 來一顆漢堡</br>
+                        精選食材 不必親自下廚</br>
+                        花小錢享用奢華美食
+                    </p>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 商品促銷活動區塊 -->
+        <section id="activity" class="activity_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/ttd.jpg">
+                    </div>
+
+                    <div class="col-md-4 activity_price text-center">
+                        <h2>售價： <span>299 </span>元</h2>
+                        <h1>加送</h1>
+                        <h2>420張歡樂貼</h2>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/cool2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 規格 -->
+        <section id="standard" class="standard_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <table class="table table-hover">
+                            <tr>
+                                <h5 scope="col">規格說明：</h5>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">中英文品名：</th>
+                                    <td>黃金渣牛堡4件組合</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">材質：</th>
+                                    <td>麵包皮</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">內容物：</th>
+                                    <td colspan="2">麵包皮X2、番茄X2、黃金渣牛肉X1、萵苣X4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">產地：</th>
+                                    <td colspan="2">美國</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 貼心提醒 -->
+        <section>
+            <div class="container content">
+                <div class="row remind">
+                    <h4>貼心提醒</h4>
+                    <div class="w-100"></div>
+                    <p>下單時請留意：</p>
+                    <ul>
+                        <li>下單時把手機放在有網路的地方</li>
+                        <li>記得有足夠的錢買單</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁腳 -->
+        <footer class="footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 footer_logo">
+                        <img src="img/logo.PNG">
+                    </div>
+                    <div class="col-md-4 col-sm-6 footer_address">
+                        <ul>
+                            <li>專 線：04-33556688</li>
+                            <li>服務時間：週一至週五 9:00 ~ 21:00</li>
+                            <li>服務信箱：berberBRAND@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer_copyright justify-content-center">
+                    <p>COPYRIGHT © 2019 berberBRAND .ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+            </script>
+
+        <script src="js/back_top.js"></script>
+</body>
+
+</html>
